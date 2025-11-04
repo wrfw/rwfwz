@@ -1,0 +1,475 @@
+/* === TYPOGRAFIA I OGÓLNY STYL === */
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #f6f0e8;
+  color: #3a2c20;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* === NAGŁÓWEK === */
+header {
+  background-color: #e0d0b8;
+  border-bottom: 3px solid #b59b7c;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #3a2c20;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3a2c20;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #7b5e3b;
+}
+
+/* === KARTY === */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.card {
+  background-color: #fffaf3;
+  border: 1px solid #d3c1a7;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-family: 'Playfair Display', serif;
+  color: #3a2c20;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #5a4634;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #b59b7c;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #8d7557;
+}
+
+/* === STOPKA === */
+footer {
+  background-color: #e0d0b8;
+  color: #3a2c20;
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 3px solid #b59b7c;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* === STRONY WEWNĘTRZNE === */
+.content-page {
+  margin: 3rem 0;
+}
+
+.content-page h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3a2c20;
+}
+
+.content-page p {
+  margin-bottom: 1rem;
+  color: #5a4634;
+}
+
+.image-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* === LISTA WARSZTATÓW === */
+.workshop-list article {
+  background-color: #fffaf3;
+  border: 1px solid #d3c1a7;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.workshop-list h3 {
+  font-family: 'Playfair Display', serif;
+  color: #3a2c20;
+  margin-bottom: 0.5rem;
+}
+
+/* === SKLEP === */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product {
+  background-color: #fffaf3;
+  border: 1px solid #d3c1a7;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.price {
+  display: block;
+  font-weight: bold;
+  color: #7b5e3b;
+  margin-bottom: 0.8rem;
+}
+
+/* === LINK AKTYWNY W MENU === */
+nav a.active {
+  color: #8d7557;
+  text-decoration: underline;
+}
+
+/* === KONTAKT === */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-info {
+  background-color: #fffaf3;
+  border: 1px solid #d3c1a7;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.contact-info h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.8rem;
+  color: #3a2c20;
+}
+
+.contact-form {
+  background-color: #fffaf3;
+  border: 1px solid #d3c1a7;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #3a2c20;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #b59b7c;
+  border-radius: 5px;
+  background-color: #f6f0e8;
+  font-family: 'Roboto Slab', serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #8d7557;
+  background-color: #fffaf3;
+}
+
+.contact-form button {
+  margin-top: 1.2rem;
+  width: 100%;
+}
+
+/* === RESPONSYWNOŚĆ === */
+
+/* Ogólne wyrównanie treści i kontenera */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main.container {
+  flex: 1;
+}
+
+/* Centrowanie i maksymalna szerokość */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Telefony i małe tablety */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .content-page {
+    text-align: center;
+  }
+
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .workshop-list article,
+  .contact-info,
+  .contact-form,
+  .product {
+    text-align: left;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Małe telefony */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+
+  .card img,
+  .product img {
+    height: 180px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Duże ekrany */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .cards {
+    gap: 2.5rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+/* === STRONA GŁÓWNA – KARTY PIONOWE === */
+
+.cards-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.card-large {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fffaf3;
+  border: 1px solid #d3c1a7;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-large:hover {
+  transform: scale(1.02);
+}
+
+.card-image {
+  flex: 1 1 45%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  flex: 1 1 55%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-content h2 {
+  font-family: 'Playfair Display', serif;
+  color: #3a2c20;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.card-content p {
+  color: #5a4634;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Naprzemienny układ obrazków */
+.card-large.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Ciekawostkowe banery */
+.fact-banner {
+  background-color: #e0d0b8;
+  border-left: 5px solid #b59b7c;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  font-family: 'Roboto Slab', serif;
+  color: #3a2c20;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.fact-banner p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* === RESPONSYWNOŚĆ DLA KART === */
+@media (max-width: 900px) {
+  .card-large {
+    flex-direction: column;
+  }
+
+  .card-large.reverse {
+    flex-direction: column;
+  }
+
+  .card-content {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .card-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .fact-banner {
+    font-size: 0.95rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
