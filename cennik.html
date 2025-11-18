@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Warsztaty – Atelier Tradycyjnej Fotografi</title>
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+ <style>
+  /* Style dla wyśrodkowania i obramowania tabeli */
+  .workshop-prices {
+   width: 80%; /* Nadanie szerokości, aby auto-marginesy zadziałały */
+   margin-left: auto;
+   margin-right: auto;
+   border-collapse: collapse; /* Aby pojedyncze linie tworzyły jedną, schludną ramkę */
+   margin-bottom: 30px; /* Dodatkowy margines pod tabelą dla lepszej czytelności */
+   table-layout: fixed; /* Ułatwia kontrolę szerokości kolumn */
+  }
+
+  .workshop-prices th,
+  .workshop-prices td {
+   border: 1px solid #333; /* Dodanie obramowania do komórek */
+   padding: 12px;
+   text-align: center;
+  }
+
+  .workshop-prices th {
+   background-color: #f2f2f2;
+  }
+
+  /* Nowe style dla kolumn: */
+  .workshop-prices th:first-child,
+  .workshop-prices td:first-child {
+   width: 50%; /* Przydzielenie większej części na nazwę warsztatu */
+   text-align: left; /* Wyrównanie nazwy warsztatu do lewej */
+  }
+
+  .workshop-prices th:nth-child(2),
+  .workshop-prices td:nth-child(2),
+  .workshop-prices th:nth-child(3),
+  .workshop-prices td:nth-child(3) {
+   width: 25%; /* Kolumny z cenami są mniejsze */
+  }
+ </style>
+</head>
+<body>
+ <header>
+  <div class="container">
+   <h1 class="logo">Atelier Tradycyjnej Fotografi</h1>
+   <nav>
+    <ul>
+     <li><a href="./index.html">Strona główna</a></li>
+     <li><a href="./oferta.html">Zwiedzanie</a></li>
+     <li><a href="./warsztaty.html">Warsztaty</a></li>
+     <li><a href="./cennik.html">Cennik</a></li>
+     <li><a href="./sklep.html">Sklep</a></li>
+     <li><a href="./kontakt.html">O nas</a></li>
+    </ul>
+   </nav>
+  </div>
+ </header>
+
+ <main class="container content-page">
+  <h2>Cennik Warsztatów Fotograficznych</h2>
+
+  <table class="workshop-prices">
+   <thead>
+    <tr>
+     <th>Warsztaty</th>
+     <th>Bilet normalny (Cena)</th>
+     <th>Bilet ulgowy (Cena)</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Warsztaty tematyczne (4-godzinne)</td>
+     <td>240 zł</td>
+     <td>120 zł</td>
+    </tr>
+    <tr>
+     <td>Warsztaty rozszerzone (4 spotkania po 3 godziny)</td>
+     <td>599 zł</td>
+     <td>240 zł</td>
+    </tr>
+    <tr>
+     <td>Warsztaty grupowe (do 10 osób)</td>
+     <td>od 500 zł</td>
+     <td>-</td>
+    </tr>
+    <tr>
+     <td>Warsztaty duet (rodzic z dzieckiem)</td>
+     <td>219 zł</td>
+     <td>-</td>
+    </tr>
+   </tbody>
+  </table>
+
+  <table class="workshop-prices">
+   <thead>
+    <tr>
+     <th>Zwiedzanie muzeum</th>
+     <th>Bilet normalny (Cena)</th>
+     <th>Bilet ulgowy (Cena)</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Bez ograniczeń czasowych</td>
+     <td>20 zł</td>
+     <td>10 zł</td>
+    </tr>
+   </tbody>
+  </table>
+
+  <section class="discount-info">
+   <h3>Kto może skorzystać z biletu ulgowego?</h3>
+   <p>Bilet ulgowy przysługuje:</p>
+   <ul>
+    <li>Uczniom i studentom do 26. roku życia za okazaniem ważnej legitymacji.</li>
+    <li>Emerytom i rencistom za okazaniem ważnej legitymacji.</li>
+    <li>Osobom z niepełnosprawnościami oraz ich opiekunom.</li>
+   </ul>
+   <p>Prosimy o posiadanie przy sobie odpowiednich dokumentów uprawniających do zniżki.</p>
+  </section>
+ </main>
+
+ <footer>
+  <div class="container footer-content">
+   <p>&copy; 2025 Atelier Tradycyjnej Fotografii</p>
+   <p>Adres: ul. Mickiewicza 109, 87-100 Toruń | Tel: +48 123 456 789</p>
+   <p>Facebook | Instagram | Twitter</p>
+  </div>
+ </footer>
+</body>
+</html>
